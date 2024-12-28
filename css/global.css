@@ -1,0 +1,29 @@
+:root {
+    --color-de-fuente-uno: #F5F5F5;
+    --color-de-fuente-dos: #464646;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #F5F5F5;
+   
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    color: var(--color-de-fuente-dos);
+   /* 
+    Un elemento con posicionamiento relative , es posicionado relativo a su posición normal, es decir, el elemento se coloca relativo al flujo normal.
+    ccodigo facilito
+    Entonces que es “position: relative”? Es un elemento que sigue el flujo del documento y puedes modificar su posicion con top, right, bottom y left.
+    platzy
+    https://www.eniun.com/posicion-comportamiento-contenedores-css/
+    */
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 16px;
+}
