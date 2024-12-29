@@ -215,7 +215,7 @@
 
 .formacion__nombre {
 font-weight: bold;
-font-size: 16px;
+font-size: 1.4rem;
 }
 
 .formacion__detalle {
@@ -268,7 +268,6 @@ font-size: 14px;
 }
 
 .contacto__form__container {
-
     display: grid;
     gap: 2.2rem;
 }
@@ -376,7 +375,6 @@ transform: scale(1);
 }
 
 
-
 @media (hover: hover) {
 
    .navegacion__elemento a:hover {
@@ -403,7 +401,6 @@ transform: scale(1);
     }
 
 }    
-
 
 /* Tablets -------------------------------------------------------------------------- */
 @media (min-width: 768px) {
@@ -541,17 +538,23 @@ transform: scale(1);
 
     .sobre-mi {
         padding: 64px 128px;
-        gap: 1.2rem;
     }
 
-    .sobre-mi__titulo {
+    .sobre-mi__titulo,
+    .habilidades__titulo,
+    .aficiones__titulo,
+    .formacion__titulo,
+    .proyectos__titulo,
+    .contacto__titulo{
         font-size: 32px;
     }
 
-    .sobre-mi__texto {
-        font-size: 16px ;
-        font-weight: normal;
-    }  
+    .sobre-mi__texto, 
+    .formacion__detalle,
+    .proyectos__descripcion,
+    .contacto__descripcion {
+        font-size: 16px;
+    }
 
     .sobre-mi__firma {
         max-width: 15%;
@@ -576,20 +579,12 @@ transform: scale(1);
         height: 168px; 
     }
 
-    .habilidades__titulo,
-    .aficiones__titulo,
-    .formacion__titulo,
-    .proyectos__titulo,
-    .contacto__titulo{
-        font-size: 32px;
-    }
-
     .formacion {
         align-items: center;
         gap: 32px;
         padding: 82px;
     }
-/*-------------------------*/
+
     .formacion__contenedor--icono {
         width: 334px;
         height: 286px;
@@ -599,15 +594,6 @@ transform: scale(1);
         gap:10px;
     }
 
-    .formacion__nombre {
-        font-size: 22px;
-    }
-
-    .formacion__detalle,
-    .contacto__descripcion {
-        font-size: 16px;
-    }
-
     .formacion__icono {
         min-width: auto;
     }
@@ -615,10 +601,6 @@ transform: scale(1);
     .proyectos{
         padding: 64px 128px;
         gap:32px;
-    }
-
-    .proyectos__descripcion {
-        font-size: 16px;
     }
 
     .contenedor__contacto {
