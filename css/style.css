@@ -70,8 +70,7 @@
 
 .presentacion__subtitulo,
 .sobre-mi__texto {
-    line-height: normal;
-    font-size: 14px;
+    font-size: 1.3rem;
 }
 .redes {
     display: flex;
@@ -176,7 +175,6 @@
 }
 
 /*------------------------------ Sección de Formaciones --------------------------------*/
-
 .formacion {
     background-color: #E9F2F6;
     padding: 32px;
@@ -236,6 +234,7 @@ font-size: 14px;
 .proyectos__contenedor {
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
     gap: 6px;
 }
 
@@ -249,7 +248,6 @@ font-size: 14px;
 }
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
-
 .contacto {
     background-color: #E9F2F6;
     padding: 32px;
@@ -270,8 +268,13 @@ font-size: 14px;
 }
 
 .contacto__form__container {
+
     display: grid;
     gap: 2.2rem;
+}
+
+.contacto__formulario {
+    width: 90%;
 }
 
 .contacto__form__group {
@@ -305,7 +308,6 @@ font-size: 14px;
 .contacto__campo--label {
     color: var(--color-de-fuente);
     cursor: pointer;
-   /* font-size: 1.1rem;*/
     position: absolute;
     top: 0;
     left: 5px;
@@ -336,7 +338,6 @@ font-size: 14px;
     transform: left bottom;
     transition: transform .4s;
 }
-
 
 .contacto__campo:focus  ~ .contacto__campo--linea,
 .contacto__campo:not(:placeholder-shown) ~ .contacto__campo--linea {
@@ -406,14 +407,7 @@ transform: scale(1);
 
 /* Tablets -------------------------------------------------------------------------- */
 @media (min-width: 768px) {
-    .cabecera {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra efecto flotante */
-    }
-
+  
     .cabecera__contacto {
         display: none;
     }
@@ -442,20 +436,13 @@ transform: scale(1);
 
     .presentacion {
         padding: 32px;
-        display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         gap: 16px;
     }
 
-    .presentacion__subtitulo,
-    .sobre-mi__texto {
-        font-size: 1.3rem;
-    }
-
     .redes {
-        display: flex;
         justify-content:flex-start;
         gap: 32px;
         font-size: 1.4rem;
@@ -490,7 +477,6 @@ transform: scale(1);
     }
 
     .formacion__lista {
-     display: flex;
      flex-direction: row;
      gap: 16px;   
     }
@@ -498,12 +484,11 @@ transform: scale(1);
     .formacion__contenedor--icono {
         width: 224px;
     }
-
 }
 
 /* Pantallas grandes ------------------------------------------------------------------*/
 @media (min-width: 1024px) {
-    /* Ajustar aún más el diseño para pantallas grandes */
+    
    .portafolio__container { 
         display: flex;
         flex-direction: column;
@@ -514,16 +499,7 @@ transform: scale(1);
 
     .cabecera {
         padding: 32px 128px;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        /*gap: auto;*/
         margin-bottom: 32px;
-    }
-
-    .cabecera__titulo {
-        font-size: 1.2rem;
-        font-weight: bold;
     }
 
     .cabecera__nav__contacto {
@@ -532,13 +508,7 @@ transform: scale(1);
         gap: 32px;
     }
 
-    .navegacion__elemento a {
-        font-size: 1rem;
-        font-weight: lighter;
-    }
-
     .navegacion__lista {
-        display: flex;
         gap: 2rem;
     }
 
@@ -569,20 +539,12 @@ transform: scale(1);
         font-size: 1.6rem;
     }
 
-    .presentacion__foto {
-        width: 100%;
-    }
-
     .sobre-mi {
-        background-color: #E9F2F7;
         padding: 64px 128px;
-        display: flex;
-        flex-direction: column; 
         gap: 1.2rem;
     }
 
     .sobre-mi__titulo {
-        font-weight: bold ;
         font-size: 32px;
     }
 
@@ -620,36 +582,30 @@ transform: scale(1);
     .proyectos__titulo,
     .contacto__titulo{
         font-size: 32px;
-        font-weight: bold;
     }
 
     .formacion {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 32px;
         padding: 82px;
     }
-
+/*-------------------------*/
     .formacion__contenedor--icono {
         width: 334px;
         height: 286px;
     }
 
     .formacion__elemento {
-        display: flex;
         gap:10px;
     }
 
     .formacion__nombre {
         font-size: 22px;
-        font-weight: bold;
     }
 
     .formacion__detalle,
     .contacto__descripcion {
         font-size: 16px;
-        font-weight: normal;
     }
 
     .formacion__icono {
@@ -658,19 +614,12 @@ transform: scale(1);
 
     .proyectos{
         padding: 64px 128px;
-        display: flex;
-        flex-direction: column;
         gap:32px;
     }
 
     .proyectos__descripcion {
         font-size: 16px;
-        font-weight: normal;
     }
-
-    .contacto {
-        padding: 64px;
-    }   
 
     .contenedor__contacto {
         padding: 64px 0px;
@@ -685,7 +634,6 @@ transform: scale(1);
     }
 
     .contacto__formulario {
-        width: 60%;
+        width: 50%;
     }
-    
 }
