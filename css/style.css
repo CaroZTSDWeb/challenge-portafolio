@@ -69,9 +69,13 @@
 }
 
 .presentacion__subtitulo,
-.sobre-mi__texto {
-    font-size: 1.3rem;
+.sobre-mi__texto,
+.formacion__detalle,
+.proyectos__descripcion,
+.contacto__descripcion {
+    font-size: 1.2rem;
 }
+
 .redes {
     display: flex;
     justify-content: space-between;
@@ -88,7 +92,8 @@
     #8ae2f0);
     color: #FFFFFF;
     transition: .3s;
-}    
+}
+
 .redes__img span {
     background-color: #4d4646;
     padding: 3px;
@@ -138,7 +143,7 @@
  text-align: center;
  line-height: 1.1;
  font-weight: bold;
- font-size: 1.7rem
+ font-size: 2rem;
 }
 
 .habilidades__lista,
@@ -169,8 +174,9 @@
 }
 
 .habilidades__nombre,
-.aficiones__nombre {
-    font-size: 16px;
+.aficiones__nombre,
+.formacion__nombre {
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -213,16 +219,6 @@
    max-width: 30%;  
 }
 
-.formacion__nombre {
-font-weight: bold;
-font-size: 1.4rem;
-}
-
-.formacion__detalle {
-font-weight: normal;
-font-size: 14px;
-}
-
 /*------------------------------ Sección de Proyectos --------------------------------*/
 .proyectos {
     padding: 32px;
@@ -236,11 +232,6 @@ font-size: 14px;
     flex-direction: column;
     padding-left: 2rem;
     gap: 6px;
-}
-
-.proyectos__descripcion {
-    font-size: 14px;
-    font-weight: normal;
 }
 
 .proyectos__imagen{
@@ -259,11 +250,9 @@ font-size: 14px;
 
 .contacto__titulo {
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 2rem;
    }
 .contacto__descripcion {
-    font-size: 14px;
-    font-weight: normal;
     margin-bottom: 16px;
 }
 
@@ -538,22 +527,6 @@ transform: scale(1);
 
     .sobre-mi {
         padding: 64px 128px;
-    }
-
-    .sobre-mi__titulo,
-    .habilidades__titulo,
-    .aficiones__titulo,
-    .formacion__titulo,
-    .proyectos__titulo,
-    .contacto__titulo{
-        font-size: 32px;
-    }
-
-    .sobre-mi__texto, 
-    .formacion__detalle,
-    .proyectos__descripcion,
-    .contacto__descripcion {
-        font-size: 16px;
     }
 
     .sobre-mi__firma {
