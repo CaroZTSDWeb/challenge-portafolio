@@ -6,14 +6,14 @@
 ---
 #### Marca este proyecto con una estrella ⭐
 
-### Analisando el repositorio!
+### Analizando el repositorio!
 ---
-### Se trabajó sobre un repositorio base como sugerencia inicial que contenía:
+### Se trabajó sobre un repositorio base:
 
 #### 🔹index.html: Documento HTML concluído con secciones comentadas para entender la estructura. 
-#### 🔹style.css: Documento de CSS con instrucciones de estilo y sugerencias de desarrollo.
+#### 🔹style.css: Documento de CSS con instrucciones de estilo.
 #### 🔹script.js: Documento vacío para desarrollar tu lógica para validar el formulário, ESTA VALIDACIÓN ES CONSIDERADA UN DESAFÍO EXTRA POR LO QUE NO ES OBLIGATÓRIA SU IMPLEMENTACIÓN.
 
-
-
+---
+### Estado del proyecto: FINALIZADO.
 

@@ -149,8 +149,7 @@
 .habilidades__lista,
 .aficiones__lista {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap row;
     gap: 32px 16px;
 }
 
@@ -252,6 +251,7 @@
     font-weight: bold;
     font-size: 2rem;
    }
+
 .contacto__descripcion {
     margin-bottom: 16px;
 }
@@ -484,6 +484,7 @@ transform: scale(1);
     } 
 
     .cabecera {
+        white-space: nowrap;
         padding: 32px 128px;
         margin-bottom: 32px;
     }
@@ -543,7 +544,6 @@ transform: scale(1);
     .habilidades,
     .aficiones {
         padding:32px 0px 0px 0px; 
-
     }
 
     .habilidades__elemento,
